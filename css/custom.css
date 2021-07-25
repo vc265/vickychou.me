@@ -464,3 +464,20 @@ video {
 body.modal-open {
     overflow: hidden;
 }
+
+/* .about .tagline {
+    margin-bottom: 0;   
+} */
+
+.about p {
+    margin-bottom: 1em;
+}
+
+.about ul {
+    padding-left: 0rem;
+}
+
+.about img {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
