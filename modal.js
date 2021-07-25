@@ -5,6 +5,7 @@ figureTrigger.forEach(function(figure){
   figure.onclick = function() {
     var modal = figure.getAttribute('data-modal');
     document.getElementById(modal).style.display = "block";
+    document.body.classList.add("modal-open"); // added to prevent body from scrolling behind modal
   }
 });
 
@@ -13,6 +14,7 @@ figureClose.forEach(function(figure){
   figure.onclick = function() {
     var modal = figure.closest('.modal');
     modal.style.display = "none";
+    document.body.classList.remove("modal-open"); // removed to enable body from scrolling after modal
   }
 });
 
