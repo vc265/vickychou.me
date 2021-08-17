@@ -63,15 +63,17 @@
     </div>
 </nav>
 
-<div class="project-perspective" style="background-image: url('images/n95/appointment-scheduler-perspective.png');">
+<div class="project-perspective" style="background-image: url('images/status-updates/status-updates-perspective.png');">
 </div>
 
 <div class="container">
     <div class="tagline">
         <div class="row">
-            <div class="offset-by-one ten columns">
+            <div class="one-third column">
                 <h1>N95 Fit-Testing Project</h1>
+            </div>
 
+            <div class="two-thirds column">
                 <h3>Enabled 1000s of hospital staff to schedule N95 fit-testing appointments at various MSK sites during COVID-19.</h3>
 
                 <div class="row">
@@ -101,9 +103,11 @@
 <div class="bodyWhite">
     <div class="container">
         <div class="row">
-            <div class="offset-by-one ten columns">
+            <div class="one-third column">
                 <h2>Context</h2>
+            </div>
 
+            <div class="two-thirds column">
                 <p>In the last quarter of 2020, the Environment, Health, and Safety (EHS) team contacted my Modern Workplace Management (MWM) team to see how their existing process for scheduling N95 fit-testing can be improved through more automation.</p>
 
                 <p>Hospital staff are normally required to get fit-tested for N95 respirators annually, but there was an urgent need for 8,000 – 10,000 staff to get fit-tested asap for a specific brand of N95 masks in preparation for a possible COVID-19 resurgence and variations and limitations in supplies.</p>
@@ -139,21 +143,30 @@
         </div>
 
         <div class="row">
-            <div class="offset-by-one ten columns">
+            <div class="one-third column">
                 <h2>Design & Implementation: Version #1</h2>
+            </div>
 
+            <div class="two-thirds column">
                 <h3>Existing Power App</h3>
 
                 <p>Prior to this N95 Fit-Testing Project, I had briefly worked on another COVID-related scheduler application – the <i>COVID-19 Antibody Self-Scheduler</i> – that I had dropped when the project was taken over by another team.</p>
         
                 <p>In hopes that I could (re)use some of the work that I had already done, I reviewed my existing design and implementation for the <i>COVID-19 Antibody Self-Scheduler</i>.</p>
+
+                <!-- <img srcset="elva-fairy-480w.jpg 480w,
+                            elva-fairy-800w.jpg 800w"
+                    sizes="(max-width: 600px) 480px,
+                            800px"
+                    src="elva-fairy-800w.jpg"
+                    alt="Elva dressed as a fairy"> -->
         
-                <img class="trigger" data-modal="antibody-scheduler-final" src="images/n95/antibody-scheduler-final.png">
+                <img class="trigger" data-modal="antibody-scheduler-final" src="images/power-app-collection/antibody-scheduler-final.png">
                 <p class="caption">the existing user flow, design, and implementation for the <i>COVID-19 Antibody Self-Scheduler</i></p>
 
                 <div class="modal" id="antibody-scheduler-final">
                     <span class="close">&times;</span>
-                    <img src="images/n95/antibody-scheduler-final.png">
+                    <img src="images/power-app-collection/antibody-scheduler-final.png">
                 </div>
 
                 <br><br>
@@ -162,12 +175,12 @@
         
                 <p>Upon review, I remembered that a large portion of the <i>COVID-19 Antibody Self-Scheduler</i> encompassed a decision-tree logic to determine whether or not staff were actually eligible for a serology test. However, because the current <i>N95 Fit-Testing Appointment Scheduler</i> would only be sent to eligible (ie. unfitted) staff, I focused primarily on the single scheduling screen of the application.</p>
 
-                <img class="trigger" data-modal="antibody-scheduler-calendar" src="images/n95/antibody-scheduler-calendar.png">
+                <img class="trigger" data-modal="antibody-scheduler-calendar" src="images/power-app-collection/antibody-scheduler-calendar.png">
                 <p class="caption">[left] the single scheduling screen in the <i>COVID-19 Antibody Self-Scheduler</i><br>[right] a copy of the left with an error message saying “This site is not open at this time on this day”</p>
 
                 <div class="modal" id="antibody-scheduler-calendar">
                     <span class="close">&times;</span>
-                    <img src="images/n95/antibody-scheduler-calendar.png">
+                    <img src="images/power-app-collection/antibody-scheduler-calendar.png">
                 </div>
 
                 <p>Still, I concluded that <strong>the existing design and implementation needed to be changed</strong> because:</p>
@@ -190,12 +203,12 @@
 
                 <p>I quickly thought of a simple user flow for staff to easily schedule, reschedule, and/or cancel a fit-testing appointment.</p>
 
-                <img class="trigger" data-modal="appointment-scheduler-flow" src="images/n95/appointment-scheduler-flow.png">
+                <img class="trigger" data-modal="appointment-scheduler-flow" src="images/power-app-collection/appointment-scheduler-flow.png">
                 <p class="caption">simple user flow for the <i>N95 Fit-Testing Appointment Scheduler</i></p>
 
                 <div class="modal" id="appointment-scheduler-flow">
                     <span class="close">&times;</span>
-                    <img src="images/n95/appointment-scheduler-flow.png">
+                    <img src="images/power-app-collection/appointment-scheduler-flow.png">
                 </div>
 
                 <br>
@@ -214,12 +227,12 @@
 
                 <p>I thus decided to style the background a bit by overlapping a calendar icon and a clock icon to align with the application’s goal and style the buttons by adding arrows to emphasize the intent of the controls.</p>
 
-                <img class="trigger" data-modal="appointment-scheduler-sample" src="images/n95/appointment-scheduler-sample.png">
+                <img class="trigger" data-modal="appointment-scheduler-sample" src="images/power-app-collection/appointment-scheduler-sample.png">
                 <p class="caption">sample layout of and error message in the <i>N95 Fit-Testing Appointment Scheduler</i></p>
 
                 <div class="modal" id="appointment-scheduler-sample">
                     <span class="close">&times;</span>
-                    <img src="images/n95/appointment-scheduler-sample.png">
+                    <img src="images/power-app-collection/appointment-scheduler-sample.png">
                 </div>
 
                 <br><br>
@@ -242,20 +255,22 @@
 
                 <p>It was only after I received positive feedback on both the usability and the functionality of my application from multiple teammates did I present my product to the business owner of the project.</p>
 
-                <img class="trigger" data-modal="appointment-scheduler-initial" src="images/n95/appointment-scheduler-initial.png">
+                <img class="trigger" data-modal="appointment-scheduler-initial" src="images/power-app-collection/appointment-scheduler-initial.png">
                 <p class="caption">user flow of the initial design and implementation of the <i>N95 Fit-Testing Appointment Scheduler</i></p>
 
                 <div class="modal" id="appointment-scheduler-initial">
                     <span class="close">&times;</span>
-                    <img src="images/n95/appointment-scheduler-initial.png">
+                    <img src="images/power-app-collection/appointment-scheduler-initial.png">
                 </div>
             </div>
         </div>
         
         <div class="row">
-            <div class="offset-by-one ten columns">
+            <div class="one-third column">
                 <h2>Additional Components to Project</h2>
-
+            </div>
+            
+            <div class="two-thirds column">
                 <h3>Timeslot Creator</h3>
 
                 <h5>Upcoming User Needs</h5>
@@ -268,12 +283,12 @@
             
                 <p>In creating this new application, I also enabled the EHS team to not only add new timeslots but also modify existing timeslots and notify scheduled staff of the updates. This way, staff can easily know of any room changes or cancellations to their appointments, a pain point mentioned above regarding the existing Excel spreadsheets.</p>
 
-                <img class="trigger" data-modal="timeslot-creator-messages" src="images/n95/timeslot-creator-messages.png">
+                <img class="trigger" data-modal="timeslot-creator-messages" src="images/power-app-collection/timeslot-creator-messages.png">
                 <p class="caption">[top left] an error message telling the EHS user to fix the day/time range in the <i>N95 Fit-Testing Timeslot Creator</i><br>[remaining] feedback for adding timeslots, updating rooms, and deleting timeslots in the <i>N95 Fit-Testing Timeslot Creator</i></p>
 
                 <div class="modal" id="timeslot-creator-messages">
                     <span class="close">&times;</span>
-                    <img src="images/n95/timeslot-creator-messages.png">
+                    <img src="images/power-app-collection/timeslot-creator-messages.png">
                 </div>
 
                 <br><br>
@@ -285,9 +300,11 @@
         </div>
 
         <div class="row">
-            <div class="offset-by-one ten columns">
+            <div class="one-third column">
                 <h2>Design & Implementation: Version #2</h2>
-
+            </div>
+            
+            <div class="two-thirds column">
                 <p>The initial design and implementation of the <i>N95 Fit-Testing Appointment Scheduler</i> went live in November 2020. As hospital staff in the Main Campus began to use the application, then, I continued to iterate on the product so that staff in the regional sites and off sites can use it as well.</p>
 
                 <p>Unfortunately, adding 8 more sites made the application much more complicated as I needed both more databases and more screen space.</p>
@@ -300,44 +317,104 @@
 
                 <p>Reorganizing all the controls took more time than expected, but it proved to be an advantageous decision when the business owner soon came back requesting to add filters in the timeslot selection screen. She explained that staff were not paying attention to the AMs and PMs and were confusing day times and night times. This was especially the case for staff who have normal work schedules and assume there are only timeslots during the day and was a challenge for staff who work off-hours and could not easily find timeslots best suited for them. I thus added some filters as well as some highly visible messages to keep staff informed on whether a selected timeslot is a weekend or overnight timeslot. The reminder is included in their confirmation email as well.</p>
 
-                <img class="trigger" data-modal="appointment-scheduler-errors" src="images/n95/appointment-scheduler-errors.png">
+                <img class="trigger" data-modal="appointment-scheduler-errors" src="images/power-app-collection/appointment-scheduler-errors.png">
                 <p class="caption">some filters and error messages to help staff better navigate the <i>N95 Fit-Testing Appointment Scheduler</i></p>
 
                 <div class="modal" id="appointment-scheduler-errors">
                     <span class="close">&times;</span>
-                    <img src="images/n95/appointment-scheduler-errors.png">
+                    <img src="images/power-app-collection/appointment-scheduler-errors.png">
                 </div>
 
-                <img class="trigger" data-modal="appointment-scheduler-final" src="images/n95/appointment-scheduler-final.png">
+                <img class="trigger" data-modal="appointment-scheduler-final" src="images/power-app-collection/appointment-scheduler-final.png">
                 <p class="caption">user flow of the final design and implementation of the <i>N95 Fit-Testing Appointment Scheduler</i></p>
 
                 <div class="modal" id="appointment-scheduler-final">
                     <span class="close">&times;</span>
-                    <img src="images/n95/appointment-scheduler-final.png">
+                    <img src="images/power-app-collection/appointment-scheduler-final.png">
                 </div>
 
-                <img class="trigger" data-modal="timeslot-creator-final" src="images/n95/timeslot-creator-final.png">
+                <img class="trigger" data-modal="timeslot-creator-final" src="images/power-app-collection/timeslot-creator-final.png">
                 <p class="caption">user flow of the final design and implementation of the <i>N95 Fit-Testing Timeslot Creator</i></p>
 
                 <div class="modal" id="timeslot-creator-final">
                     <span class="close">&times;</span>
-                    <img src="images/n95/timeslot-creator-final.png">
+                    <img src="images/power-app-collection/timeslot-creator-final.png">
                 </div>
             </div>
         </div>
 
         <div class="row">
-            <div class="offset-by-one ten columns">
+            <div class="one-third column">
                 <h2>Documentation</h2>
+            </div>
 
+            <div class="two-thirds column">
                 <p>My team didn’t have the practice of tracking completed work, but I knew how important it is to document my projects, so I spent some extra time writing up both the appointment scheduler and the timeslot creator after each major version update. The final breakdown of my documentation is as follows:</p>
 
-                <img class="trigger" data-modal="n95-toc" src="images/n95/n95-toc.png">
-                <!-- <p class="caption"></i></p> -->
-
-                <div class="modal" id="n95-toc">
-                    <span class="close">&times;</span>
-                    <img src="images/n95/n95-toc.png">
+                <div class="list-item">
+                    <ul>
+                        <li>Links</li>
+                        <ul>
+                            <li>Development Environment</li>
+                            <li>Production Environment</li>
+                        </ul>
+    
+                        <li>Project Overview</li>
+                        <ul>
+                            <li>Goal</li>
+                            <li>Old Teamshare Process vs. New Power Platform Process</li>
+                            <li>Go-Live Date</li>
+                            <li>Ver.1 – Main Campus vs. Ver.2 – All Sites</li>
+                            <li>Walkthrough of Project</li>
+                        </ul>
+    
+                        <li>Structure of SharePoint Lists</li>
+                        <ul>
+                            <li>(Custom) Columns</li>
+                            <li>Indexed Columns</li>
+                            <li>List Views</li>
+                            <li>Calendar Overlays</li>
+                        </ul>
+    
+                        <li>Implementation of the <i>N95 Fit-Testing Appointment Scheduler – All Sites Power App</i></li>
+                        <ul>
+                            <li>Design System</li>
+                            <li>Variables and Collections</li>
+                            <li>Screens and Controls</li>
+                        </ul>
+    
+                        <li>Implementation of the <i>N95 Fit-Testing Timeslot Creator – All Sites Power App</i></li>
+                        <ul>
+                            <li>Design System</li>
+                            <li>Variables and Collections</li>
+                            <li>Screens and Controls</li>
+                        </ul>
+    
+                        <li>Implementation of the <i>N95 Fit-Testing BCC Reminder Flows</i></li>
+    
+                        <li>Implementation of the <i>N95 Fit-Testing numID Flows</i></li>
+    
+                        <li>Migrating from Dev to Prod: Things to Note</li>
+                        <ul>
+                            <li><i>N95 Fit-Testing Appointment Scheduler – All Sites Power App</i>></li>
+                            <li><i>N95 Fit-Testing Timeslot Creator – All Sites Power App</i>></li>
+                            <li><i>N95 Fit-Testing BCC Reminder Flows</i>></li>
+                            <li><i>N95 Fit-Testing numID Flows</i>></li>
+                            <li>SharePoint Lists</li>
+                        </ul>
+    
+                        <li>Updates for the Future</li>
+                        <ul>
+                            <li>Adding more MSK sites</li>
+                        </ul>
+                        
+                        <li>Frequently Asked Questions/Troubleshooting Questions</li>
+                        <ul>
+                            <li>How many appointments have been booked?</li>
+                            <li>I donʼt see any timeslots at [MSK site]</li>
+                            <li>I am having trouble using the application to schedule an appointment</li>
+                        </ul>
+                    </ul>
                 </div>
 
                 <p>I made sure to upload all of the documentation and share all of the databases, applications, and workflows with my team’s resource account so that my team can review, support, and even duplicate my work if needed.</p>
@@ -345,20 +422,16 @@
         </div>
 
         <div class="row">
-            <div class="offset-by-one ten columns">
+            <div class="one-third column">
                 <h2>Conclusion</h2>
+            </div>
 
+            <div class="two-thirds column">
                 <p>This project is one of my most rewarding and memorable projects during my time at MSKCC. I love that I was able to play a role in alleviating some of the challenges the hospital was facing during the pandemic and that I had some direct impact on the clinicians’ experiences.</p>
         
                 <p>Ultimately, the greatest challenges I faced in this project were finding workarounds for limitations in the platform that my team was using, but I’ve always taken pride in taking the time to find resources for and solutions to my technical problems. Nonetheless, I would have appreciated working more collaboratively with at least one other citizen developer to see if my implementation was efficient and to have some additional time to conduct usability tests with actual hospital staff; while I did receive positive feedback from my team members and the business owner, neither of them were actual users of the scheduler application, and the brief conversations I did have with some hospital staff before they ran to clinic again all focused on the technical difficulties they were facing when accessing the application (eg. not knowing how to authorize the application to use their credentials).</p>
 
                 <p>Still, more than 4,000 staff members have successfully scheduled fit-testing appointments through my application over the half year, with more than 100 staff members scheduling appointments per day during COVID’s peak, so I don’t think I did too badly on this project :)</p>
-
-                <!-- <img srcset="images/n95/appointment-scheduler-final-l.png 1960w,
-                images/n95/appointment-scheduler-final-m.png 1372w,
-                images/n95/appointment-scheduler-final-s.png 784w"
-                    sizes="100vw"
-                    src="images/n95/appointment-scheduler-final-s.png"-->
             </div>
         </div>
 
