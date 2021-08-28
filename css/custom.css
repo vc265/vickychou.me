@@ -353,14 +353,15 @@ footer a {
 
 
 
-.list-item {
+.indented-item {
     border-left: 6px solid #91a683;
     padding-left: 20px;
     margin-left: 20px;
 }
 
-.list-item p {
+.indented-item p {
     padding-left: 20px;
+    font-family: serif;
 }
 
 .caption {
