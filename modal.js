@@ -21,5 +21,6 @@ figureClose.forEach(function(figure){
 window.onclick = function(event) {
   if (event.target.className === "modal") {
     event.target.style.display = "none";
+    document.body.classList.remove("modal-open"); // removed to enable body from scrolling after modal
   }
 }
