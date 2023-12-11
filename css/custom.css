@@ -23,7 +23,7 @@ html {
 body {
     background-color: #f5f5f5;
     font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 18px;
     line-height: 24px;
     margin-top: 60px;
@@ -37,6 +37,18 @@ h1, h2, h3 {
 
 h1, h2 {
     color: #5e548e;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+h2 {
+    font-weight: 600;
+    /* text-transform: uppercase; */
+}
+
+h3 {
     font-weight: 400;
 }
 
@@ -66,6 +78,10 @@ ul {
 
 li {
     padding-left: 12px;
+}
+
+ol > li::marker {
+    font-weight: bold;
 }
 
 
@@ -284,6 +300,8 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
 
 /* .flex {
     display: flex;
