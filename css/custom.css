@@ -326,9 +326,11 @@ nav {
 
 
 .project-perspective {
-    height: 90vh;
+    height: 60vh;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
+    border-bottom: 1px solid #5e548e;
 }
 
 
