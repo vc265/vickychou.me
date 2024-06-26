@@ -52,9 +52,10 @@
     <!-- JQuery -->
     <script src="./jquery-3.7.1.min.js" type="text/javascript"></script>
 
-    <!-- Footer -->
+    <!-- Import -->
     <script>
         $(function() {
+            $("#header").load("header.html");
             $("#footer").load("footer.html");
         });
     </script>
@@ -65,19 +66,7 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-
-<nav>
-    <div class="container">
-        <div class="row">
-            <div class="navbar-links">
-                <a class="navbar-link-inactive" href="./index.html">portfolio</a>
-                <a class="navbar-link-inactive" href="files/resume.pdf" target="_blank">résumé</a>
-                <a class="navbar-link-active">about</a>
-            </div>
-        </div>
-    </div>
-</nav>
-
+<div id="header"></div>
 
 <div class="container about">
     <div class="tagline">
