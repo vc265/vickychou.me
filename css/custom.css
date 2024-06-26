@@ -10,6 +10,7 @@
 /* ghost: #f5f5f5 */
 /* purple-navy: #5e548e */
 /* purple-mountain: #9f86c0 */
+/* blue-note: #003bde */
 
 
 
@@ -492,6 +493,11 @@ video {
 .list > :last-child {
     margin-bottom: 0;
 } */
+
+.code {
+    font-family: 'Merriweather', sans-serif;
+    color: #003bde;
+}
 
 
 
