@@ -128,16 +128,16 @@
                         <li><a href="#v1">Writing for V1</a></li>
                         <li><a href="#v1.x.y">Writing for V1.x.y</a></li>
                         <ol>
-                            <li>Identifying what needs documentation</li>
-                            <li>Researching the information</li>
-                            <li>Documenting the information</li>
-                            <li>Getting SME reviews and peer reviews</li>
-                            <li>Publishing updates via a posting freeze</li>
+                            <li><a href="#identify">Identifying what needs documentation</a></li>
+                            <li><a href="#research">Researching the information</a></li>
+                            <li><a href="#document">Documenting the information</a></li>
+                            <li><a href="#reviews">Getting SME reviews and peer reviews</a></li>
+                            <li><a href="#publish">Publishing updates via a posting freeze</a></li>
                         </ol>
                         <li><a href="#ki">Documenting known issues</a></li>
                         <ol>
-                            <li>Creating a KI definition page</li>
-                            <li>Improving KI user flow in documentation site</li>
+                            <li><a href="#define">Creating a KI definition page</a></li>
+                            <li><a href="#improve">Improving KI user flow in documentation site</a></li>
                         </ol>
                         <li><a href="#feedback">Addressing documentation feedback</a></li>
                         <li><a href="#thoughts">Final thoughts</a></li>
@@ -261,7 +261,7 @@
 
                 <br><br>
 
-                <h3>Identifying what needs documentation</h3>
+                <h3 id="identify">Identifying what needs documentation</h3>
 
                 <p>As the engineering team continued to add new features and enhancements to the KCC product that did not previously exist in the PJN accelerator, <strong>I needed to identify the specific product updates that required documentation.</strong> Traditionally, either the product manager or the engineering lead would take on this role. However, because I wanted to be more involved with the KCC team and because I felt comfortable owning the responsibility, I volunteered to take this job on and was given the green light to do so.</p>
 
@@ -290,7 +290,7 @@
 
                 <br><br>
 
-                <h3>Researching the information</h3>
+                <h3 id="research">Researching the information</h3>
 
                 <p>For each ticket that I marked as requiring documentation, I waited for the engineers to finish developing, testing, and merging their code changes before I began researching and writing. For larger features, I waited until most, if not all, of the tickets for the feature had been completed. Then, I:</p>
 
@@ -307,7 +307,7 @@
 
                 <br><br>
 
-                <h3>Documenting the information</h3>
+                <h3 id="document">Documenting the information</h3>
 
                 <p>Only after I established a solid understanding of a ticket did I begin to actually put pen to paper, using <a href="https://paligo.net/" target="_blank">Paligo</a> to write and manage all of my content and using <a href="https://www.techsmith.com/screen-capture.html" target="_blank">Snagit</a> to capture and annotate any screenshots.</p>
 
@@ -333,13 +333,13 @@
 
                 <br><br>
 
-                <h3>Getting SME reviews and peer reviews</h3>
+                <h3 id="reviews">Getting SME reviews and peer reviews</h3>
 
                 <p>After I finished drafting the release note and/or product documentation for a ticket, I would send my content first to a SME and then to another technical writer and make edits as necessary. All of my documentation must go through at least one SME review and one peer review before I can publish any content onto our external documentation site to ensure both accuracy and readability, respectively.</p>
 
                 <br><br>
 
-                <h3>Publishing updates via a posting freeze</h3>
+                <h3 id="publish">Publishing updates via a posting freeze</h3>
 
                 <p>To align with each product release, our Technical Writing team has a posting freeze process during which we compile and publish all of the documentation changes for the major, minor, or patch release. We call it a “posting freeze,” similar to how engineering teams may have a “code freeze,” because we cannot freely publish any Paligo output while we merge our changes, update our table of contents, and more. <strong>The overall posting freeze process was already established before I joined Komodo, but I worked with the other technical writers to revamp several required steps and tasks in the process.</strong> For example, we have since removed the step to request for the list of schema changes from the engineering lead because we gather and document this information as part of our standard product documentation process. Additionally, we have added a task to create a new section in the product’s announcements page when there are major updates to the product or documentation. There are also several differences in the posting freeze tasks for publishing the release notes and product documentation of each major, minor, or patch release, and some tasks must be completed before or after the actual duration of the posting freeze. For instance, only after the latest documentation changes have been published can we use <a href="https://www.screamingfrog.co.uk/seo-spider/" target="_blank">Screaming Frog</a> to crawl the documentation site to check for any broken external links.</p>
 
@@ -361,7 +361,7 @@
 
                 <br><br>
 
-                <h3>Creating a KI definition page</h3>
+                <h3 id="define">Creating a KI definition page</h3>
 
                 <p>A known issue (KI) is a bug found in a live product that is deemed severe or common enough to require acknowledgement from the product team that the bug exists and potentially a hotfix release from the engineering team to resolve the bug. <strong>When I asked Tx team members how they determined if a bug was “severe or common enough,” I noticed there was hesitation and inconsistency in their responses and knew immediately that this would raise confusion amongst customers as well.</strong> I subsequently proposed documenting and publishing a page dedicated to breaking down this information for both internal and external stakeholders to know. Everyone was on board with this idea, so I drafted and published a KI definition page on the external documentation site for each TX app.</p>
 
@@ -377,7 +377,7 @@
 
                 <br><br>
 
-                <h3>Improving KI user flow in documentation site</h3>
+                <h3 id="improve">Improving KI user flow in documentation site</h3>
 
                 <p>Two Tx product and engineering leads later expressed concern that individual KIs were difficult to find in Komodo’s external documentation site. The link to the list of KIs was embedded in a sentence on the KI definitions page, and the link of each active KI would break once it became an archived KI.</p>
 
@@ -398,7 +398,7 @@
                     </ul>
                 </div>
 
-                <p>However, the first user flow would keep the KIs in a KI output that is separate from each product output while the second user flow would move the KIs into each individual product’s output. The former would require less work from the Technical Writing team to move all of the necessary content, but the latter meant that the links would stay consistent within the product’s output. (Links from a KI output would contain <span class="code">/ki/</span> while links from a product’s output would contain <span class="code">/kcc/</span> or <span class="code">/mic/</span>.)</p>
+                <p>However, the first user flow would keep a copy of the KI definition page in a KI output while the second user flow would only have the KI definition page in each of the individual product’s output. Additionally, while the former reduced the number of clicks for users who may not know what KIs are at all, the latter was easier to implement.</p>
 
                 <img class="trigger" data-modal="ki-proposed-1" src="images/kcc/ki-proposed-1.png" alt="">
                 <p class="caption">The first proposed solution for updating the KI user flow in the documentation site. The screenshots use the MIC documentation instead of the KCC documentation.</i></p>
@@ -416,7 +416,7 @@
                     <img src="images/kcc/ki-proposed-2.png">
                 </div>
 
-                <p>After sharing both proposed solutions to the Tx product and engineering leads, I received feedback to proceed with the second user flow, which was my preferred design as well. I made all of the necessary code changes and published new outputs for all of the products.</p>
+                <p>After sharing both proposed solutions to the Tx product and engineering leads, I received feedback to proceed with the first user flow, which was my preferred design as well. Despite the greater amount of work I needed to do, the first user flow provided a better experience for users and allowed the KI output, which we needed regardless, to serve a greater purpose than to simply redirect users to the other outputs. I made all of the necessary code changes and published new outputs for all of the products.</p>
             </div>
         </div>
 
