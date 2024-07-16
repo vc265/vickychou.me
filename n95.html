@@ -113,10 +113,31 @@
 
                 <ol>
                     <li><a href="#context">Context</a></li>
+                    <ol>
+                        <li><a href="#existing-process">Existing Process</a></li>
+                        <li><a href="#requirements">Project Requirements</a></li>
+                    </ol>
                     <li><a href="#dni-version-1">Design & Implementation: Version #1</a></li>
+                    <ol>
+                        <li><a href="#existing-app">Existing Power App</a></li>
+                        <li><a href="#shortfalls">Usability Shortfalls</a></li>
+                        <li><a href="#design">Design Process</a></li>
+                        <li><a href="#implement">Implementation Process</a></li>
+                        <li><a href="#test">Testing Process</a></li>
+                    </ol>
                     <li><a href="#additional-components">Additional Components to Project</a></li>
+                    <ol>
+                        <li><a href="#timeslot-creator">Timeslot Creator</a></li>
+                        <li><a href="#reminder-workflow">Reminder Workflow</a></li>
+                    </ol>
                     <li><a href="#dni-version-2">Design & Implementation: Version #2</a></li>
+                    <ol>
+                        <li><a href="#filters">Filters</a></li>
+                    </ol>
                     <li><a href="#documentation">Documentation</a></li>
+                    <ol>
+                        <li><a href="#architecture">Organization & Breakdown</a></li>
+                    </ol>
                     <li><a href="#conclusion">Conclusion</a></li>
                 </ol>
             </div>
@@ -134,7 +155,7 @@
 
                 <br><br>
 
-                <h3>Existing Process</h3>
+                <h3 id="existing-process">Existing Process</h3>
 
                 <p>At the time, the EHS team was using three different Excel spreadsheets to track the timeslots and appointments at the different MSK sites.</p>
 
@@ -154,7 +175,7 @@
 
                 <br><br>
 
-                <h3>Project Requirements</h3>
+                <h3 id="requirements">Project Requirements</h3>
 
                 <p>Through several calls with the EHS team, I gathered more information about the actual fit-testing process at the different MSK sites as well as the eventual data cleaning and analysis process. However, due to the urgency of the project, <strong>my main role and priority was to update the scheduling portion for fit-tests at the Main Campus</strong>. As such, I only needed to track the name and email of each staff member scheduling a fit-testing appointment and only needed to focus on one MSK site.</p>
             </div>
@@ -164,7 +185,7 @@
             <div class="column" id="dni-version-1">
                 <h2>Design & Implementation: Version #1</h2>
 
-                <h3>Existing Power App</h3>
+                <h3 id="existing-app">Existing Power App</h3>
 
                 <p>Prior to this N95 Fit-Testing Project, I had briefly worked on another COVID-related scheduler application – the <i>COVID-19 Antibody Self-Scheduler</i> – that I had dropped when the project was taken over by another team.</p>
         
@@ -180,7 +201,7 @@
 
                 <br><br>
 
-                <h3>Usability Shortfalls</h3>
+                <h3 id="shortfalls">Usability Shortfalls</h3>
         
                 <p>Upon review, I remembered that a large portion of the <i>COVID-19 Antibody Self-Scheduler</i> encompassed a decision-tree logic to determine whether or not staff were actually eligible for a serology test. However, because the current <i>N95 Fit-Testing Appointment Scheduler</i> would only be sent to eligible (ie. unfitted) staff, I focused primarily on the single scheduling screen of the application.</p>
 
@@ -206,7 +227,7 @@
 
                 <br><br>
 
-                <h3>Design Process</h3>
+                <h3 id="design">Design Process</h3>
 
                 <h5>User Flow</h5>
 
@@ -246,7 +267,7 @@
 
                 <br><br>
 
-                <h3>Implementation Process</h3>
+                <h3 id="implement">Implementation Process</h3>
 
                 <h5>Database</h5>
 
@@ -258,7 +279,7 @@
 
                 <br><br>
                 
-                <h3>Testing Process</h3>
+                <h3 id="test">Testing Process</h3>
 
                 <p>Once I finished designing and implementing the first version of the application, I ran through all the possible user flows to check for any bugs. I also asked my teammates to test my work as well.</p>
 
@@ -278,7 +299,7 @@
             <div class="column" id="additional-components">
                 <h2>Additional Components to Project</h2>
 
-                <h3>Timeslot Creator</h3>
+                <h3 id="timeslot-creator">Timeslot Creator</h3>
 
                 <h5>Upcoming User Needs</h5>
         
@@ -300,7 +321,7 @@
 
                 <br><br>
 
-                <h3>Reminder Workflow</h3>
+                <h3 id="reminder-workflow">Reminder Workflow</h3>
 
                 <p>I also knew that I needed to create a workflow of some sort to remind each scheduled staff of their upcoming appointment to reduce the number of no-shows. As such, I also took initiative to create an automated workflow that would run every morning, find all of the staff who have appointments the following day, and email them with a generic reminder regarding their appointment. (Another technical challenge that I had faced during this project was implementing this workflow such that it could email a large number of staff with their unique appointment information. My final implementation was to send a single email with all of the staff in the BCC field and a link to the Power App that would check for and display their appointment details anyway.)</p>
             </div>
@@ -316,7 +337,7 @@
 
                 <br><br>
 
-                <h3>Filters</h3>
+                <h3 id="filters">Filters</h3>
 
                 <p>For the design specifically, I ultimately did away with the three-column layout to maximize space and reduce clutter in the application.</p>
 
@@ -356,7 +377,7 @@
 
                 <br><br>
 
-                <h3>Organization and Breakdown</h3>
+                <h3 id="architecture">Organization and Breakdown</h3>
 
                 <p>Since I didn’t have any existing documentation to base mine off of, I needed to plan out what I wanted to include in my documentation and how I wanted to organize all of the information.</p>
 
